@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <h1>Página de cadastro</h1>
+      <fieldset>
+        <legend>Crie sua conta</legend>
+        <label for="user_name">Seu nome:</label> <br />
+        <input type="text" id="user_name" name="name" required />
+        <br /><br />
+
+        <label for="user_email">Seu email</label> <br />
+        <input
+          type="email"
+          id="user_email"
+          name="email"
+          pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
+          required
+        />
+        <br /><br />
+
+        <label for="user_password">Sua senha</label> <br />
+        <input
+          type="password"
+          id="user_password"
+          name="password"
+          minlength="8"
+          required
+        />
+        <br /><br />
+
+        <fieldset style="border: none; padding: 0">
+          <legend>Seu gênero</legend>
+        </fieldset>
+
+        <input type="radio" name="gender" id="man" value="masculino" />
+        <label for="masculino">Masculino</label> <br />
+        <input type="radio" name="gender" id="girl" value="feminino" />
+        <label for="feminino">Feminino</label> <br />
+        <br />
+
+        <label for="user_bio">Sua biografia</label><br />
+        <textarea
+          placeholder="Fale um pouco sobre você..."
+          name="biography"
+          id="user_bio"
+          rows="6"
+        ></textarea>
+        <br /><br />
+
+        <input type="checkbox" name="terms" id="terms" checked />
+        <label for="terms">Eu li e aceito os termos de serviço</label>
+        <br /><br />
+      </fieldset>
+      <br />
+      <button type="submit">Cadastrar</button>
+      <button type="reset">Limpar</button>
+    </form>
+  </body>
+</html>
