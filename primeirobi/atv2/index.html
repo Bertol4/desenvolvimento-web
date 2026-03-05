@@ -14,7 +14,7 @@
         <input type="text" id="user_name" name="name" required />
         <br /><br />
 
-        <label for="user_email">Seu email</label> <br />
+        <label for="user_email">Seu email:</label> <br />
         <input
           type="email"
           id="user_email"
@@ -24,9 +24,11 @@
         />
         <br /><br />
 
-        <label for="user_password">Sua senha</label> <br />
+        <label for="user_password">Sua senha (mínimo 8 caracteres):</label>
+        <br />
         <input
           type="password"
+          pattern=".{8,}"
           id="user_password"
           name="password"
           minlength="8"
@@ -35,7 +37,7 @@
         <br /><br />
 
         <fieldset style="border: none; padding: 0">
-          <legend>Seu gênero</legend>
+          <legend>Seu gênero:</legend>
         </fieldset>
 
         <input type="radio" name="gender" id="man" value="masculino" />
@@ -44,7 +46,7 @@
         <label for="feminino">Feminino</label> <br />
         <br />
 
-        <label for="user_bio">Sua biografia</label><br />
+        <label for="user_bio">Sua biografia:</label><br />
         <textarea
           placeholder="Fale um pouco sobre você..."
           name="biography"
