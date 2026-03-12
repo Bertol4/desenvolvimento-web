@@ -1,0 +1,59 @@
+* ::after,
+* ::before {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  height: 100vh;
+  background-color: red;
+}
+
+p {
+  color: white;
+  font-size: 3rem;
+}
+
+div p {
+  color: blue;
+}
+
+div > p {
+  color: green;
+}
+
+h1 + p {
+  color: yellow;
+}
+
+h1 ~ p {
+  color: black;
+}
+
+.btn-box button:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-box > button {
+  background-color: rgb(60, 255, 0);
+  color: white;
+  font-size: 1.5rem;
+  padding: 100px;
+  border: none;
+  border-radius: 5px;
+}
+
+.border-box {
+  border: 1px solid black;
+  padding: 20px;
+  height: 40px;
+  width: 60px;
+  background-color: violet;
+  box-sizing: border-box;
+}

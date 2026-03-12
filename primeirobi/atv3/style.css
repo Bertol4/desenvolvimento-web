@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(220, 255, 223);
+}
+
+.border-box {
+  margin: 40px;
+  border: 5px solid #336637;
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.background-image {
+  width: 50%;
+  height: auto;
+  background-size: cover;
+}
+
+a {
+  color: #336637;
+  text-decoration: "none";
+  font-size: 1.5rem;
+}
+
+nav a:hover,
+aside a:hover {
+  color: rgb(60, 255, 0);
+  text-decoration: underline;
+}
+
+img {
+  border: 10px solid #336637;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #336637;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #336637;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #336637;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #336637;
+}
+
+figcaption {
+  font-size: 1.2rem;
+  color: #336637;
+}
