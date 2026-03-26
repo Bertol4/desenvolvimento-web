@@ -1,0 +1,6 @@
+const valorConta = 100;
+const percentualGorjeta = 15;
+const valorGorjeta = (valorConta * (percentualGorjeta / 100));
+const valorTotal = (valorConta+valorGorjeta);
+
+console.log(`Valor da conta: R$:${valorConta}, Gorjeta(15%): R$:${valorGorjeta}, Total a pagar: R$:${valorTotal}R$`);
