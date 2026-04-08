@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do List</title>
+  </head>
+  <body>
+    <main>
+      <section class="main-section">
+        <div
+          class="container"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          "
+        >
+          <h1>To do List</h1>
+<form class="form" id="form">
+            <input
+              type="text"
+              class="input"
+              placeholder="Digite uma tarefa"
+              required
+            />
+            <button type="submit">Adicionar</button>
+            <button type="button" onclick="removeLastItem()">Remover</button>
+          </form>
+          <ul class="ul-parent"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
