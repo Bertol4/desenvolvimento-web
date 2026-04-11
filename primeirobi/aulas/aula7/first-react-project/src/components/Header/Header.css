@@ -1,0 +1,9 @@
+
+header{
+    background-color:rgb(183, 183, 183);
+    padding: 3rem;
+    margin-left: 15rem;
+    width: calc(100% - 15rem);
+    text-align: center;
+    color: #fff;
+}

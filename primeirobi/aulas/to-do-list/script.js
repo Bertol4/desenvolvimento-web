@@ -1,26 +1,17 @@
-// 1. Função para adicionar o item (disparada pelo Form)
+// função para adicionar o item
 function handleSend(event) {
     event.preventDefault();
     
     const ulParent = document.querySelector('.ul-parent');
-    const input = event.target[0]; // O campo de texto
+    const input = event.target[0];
 
     if (input.value.trim() !== "") {
         const newLi = document.createElement('li');
+        newLi.textContent = input.value;
         
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        
-        const textSpan = document.createElement('span');
-        textSpan.textContent = input.value;
-        textSpan.style.marginLeft = '8px';
-        textSpan.className = 'task-text';
-        
-        newLi.appendChild(checkbox);
-        newLi.appendChild(textSpan);
         ulParent.appendChild(newLi);
         
-        input.value = ""; // Limpa o input após adicionar
+        input.value = ""; 
     }
 }
 
@@ -32,10 +23,18 @@ function removeLastItem(){
     }
 }
 
+function handleClick(event) {
+    const li = event.target.closest('li');
+    if (li) {
+        li.remove();
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector('form'); // Selecione seu form
+    const form = document.querySelector('form');
     const ulParent = document.querySelector('.ul-parent');
 
     form.addEventListener("submit", handleSend);
     ulParent.addEventListener("click", handleClick);
 });
+

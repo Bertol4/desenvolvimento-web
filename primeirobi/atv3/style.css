@@ -17,6 +17,8 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: rgb(24, 24, 83);
   padding: 10px;
+  align-items: flex-start;
+
 }
 
 .border-box {

@@ -1,0 +1,14 @@
+#titulo-principal{
+    color: blue;
+}
+
+.color-green{
+    color: green;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
